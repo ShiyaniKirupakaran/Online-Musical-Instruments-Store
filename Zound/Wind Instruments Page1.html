@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title> WIND INSTRUMENTS </title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<style>
+
+	* {
+		box-sizing: border-box;
+	}
+	.header::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+	.instrument type::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+	[class*="col-"] {
+		float: left;
+		padding: 15px;
+	}
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	
+	.col-9::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+	[class*="col-level"] {
+		float: left;
+		padding: 15px;
+	}
+	.col-level1 {width: 33.33%;}
+	.col-level2 {width: 66.66%;}
+	.col-level3 {width: 100%;}
+	
+	[class*="col-level-"] {
+		float: left;
+		padding: 15px;
+	}
+	.col-level-1 {width: 100%;}
+	
+		.title{
+			background-image:url("BrillMusic_InsideBanner5.png");
+			opacity:0.8;
+			filter:alpha(opacity=80);
+			height:200px;
+			border-radius: 25px 25px 0px 0px;
+			font-family:Brush Script MT;
+			font-size:60px;
+			color: #e67e22 ;
+			padding:1px;
+			line-height:0.5px;
+		}
+		
+		.header{
+			background-color:  #d5dbdb;
+			font-family:Algerian;
+			font-size:25px;
+			text-align:center;
+			color:black;
+		}
+		
+		.a1:link {
+			text-decoration: none;
+		}
+
+		.a1:visited {
+			text-decoration: none;
+		}
+		
+		.a1:visited {
+			color: black;
+		}
+
+		.btn {
+			background-color: #424949;
+			color: white;
+			padding: 5px;
+			font-size: 10px;
+			border: solid;
+			border-radius: 15px;
+			cursor: pointer;
+		}
+		
+		.btn1 {
+			background-color: #424949;
+			color: white;
+			padding: 5px;
+			font-size: 25px;
+			border: solid;
+			border-radius:15px;
+			cursor: pointer;
+		}
+		
+		* {box-sizing:border-box}
+		body {font-family: Verdana,sans-serif;margin:0}
+		.mySlides {display:none}
+
+		.slideshow-container {
+			max-width: 1000px;
+			position: relative;
+			margin: auto;
+		}
+		
+		.numbertext {
+			color: #f2f2f2;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+		}
+		
+		.dot {
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+		}
+		
+		.prev, .next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			padding: 16px;
+			margin-top: -22px;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+		}
+		
+		.text {
+			color: #f2f2f2;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+		}
+		
+		.active, .dot:hover {
+			background-color: #717171;
+		}
+		
+		.fade {
+			-webkit-animation-name: fade;
+			-webkit-animation-duration: 1.5s;
+			animation-name: fade;
+			animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+			from {opacity: .4} 
+			to {opacity: 1}
+		}
+
+		@keyframes fade {
+			from {opacity: .4} 
+			to {opacity: 1}
+		}
+		
+		.offer{
+			background-image:url("banner-1.png");
+			opacity:0.8;
+			filter:alpha(opacity=80);
+			height:880px;
+			border-radius: 100px 25px 100px 25px;
+			font-family:Chiller;
+			font-size:150px;
+			text-align:center;
+			color:white;
+			margin-top:150px;
+		}
+		
+		.contact{
+			background-color:   #7f8c8d  ;
+			padding:0.1%;
+			border-radius: 15px;
+			margin-bottom:10px;
+			font-size:20px;
+			line-height:45px;
+		}
+		
+		.copyright{
+			background-color:#424949 ;
+			padding:1%;
+			border-radius: 5px;
+			text-align:right;
+			font-size:25px;
+			color:blue;
+		}
+		
+		.image {
+			display: inline-block;
+			width: 150px;
+			height: 100px;
+		}
+		
+		.margin {
+			margin-bottom:150px;
+		}
+		h3{
+			font-size:24px;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="title col-12">
+		<h1>Zound</h1>
+		<h2 style="font-family:Agency FB;font-size:30px;">Online Store for Musical Instruments</h2>
+	</div>
+	
+	<div class="header col-12">
+	
+		<div  class="Home col-3">
+			<a href="Zound.html" class="a1">Home</a>
+		</div>
+		
+		<div class="My Account col-3">
+			<a href="My Account.html" class="a1">My Account</a>
+		</div>
+		
+		<div class="Customer col-3">
+			<a href="Customer Services.html" class="a1">Customer Services</a>
+		</div>
+		
+		<div class="Contact col-3">
+			<a href="Contact Us.html" class="a1">Contact Us</a>
+		</div>
+		
+	</div>
+	
+	<div class="col-12">
+        <div class="col-3">
+			<div class="col-level-1">
+				<div class="slideshow-container">
+
+					<div class="mySlides fade">
+					  <div class="numbertext">1 / 4</div>
+					  <img src="Instuments/Wind/Sarrusophone/Yamaha_Saxophone_YAS-62.tif.jpg" style="width:300px;height:300px">
+					  <div class="text">Caption Text</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">2 / 4</div>
+					  <img src="Instuments/Drums/pdp-pacific-drums-and-percussion-platinum-series-59685.jpg" style="width:300px;height:300px">
+					  <div class="text">Caption Two</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">3 / 4</div>
+					  <img src="Instuments/Keyboards/182481-004-E8814065.jpg" style="width:300px;height:300px">
+					  <div class="text">Caption Three</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">4 / 4</div>
+					  <img src="Instuments/String/Double Bass/schumann-JH-200.jpg" style="width:300px;height:300px">
+					  <div class="text">Caption Four</div>
+					</div>
+
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				</div>
+				<br>
+
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span>
+				  <span class="dot" onclick="currentSlide(4)"></span> 
+				</div>
+
+				<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+				</script>
+			</div>
+		
+			<div class="offer col-level-1">
+				Our Best Offers for You
+			</div>
+		</div>
+		  
+		<div class="col-9">
+			<div class="col-level3">
+				<h1 style="font-family:Candara;color:#7f8c8d;"> WIND INSTRUMENTS </h1>
+				<p><i>
+					We are glad to welcome you in our store. You've made a right decision by choosing our store. Our company will give you the magic of the music world because we all have the same passion. It is so amazing to feel the rhythm and good vibes, to enjoy the perfect performance and just to be a devoted fan of this magic of sound.
+
+					Our products are the perfect combination of the latest fashion trends, real durability and flexibility. You know that nowadays music is one of the main spheres in our society. It is a gigantic machine of production different goods for mental satisfaction. It is a real mainstream; moreover - it is a modern religion.
+
+					It doesn't matter what kind of music you listen to because tastes differ but we have collected all possible music-related goods in our store. Well we hope that you wouldn't waste your time and make your purchase.
+				</i></p>
+			</div>
+			
+			<div class="col-level1">
+				<img src="Instuments/Wind/Sarrusophone/71SjWT8l+KL._AC_UL320_SR160,320_.jpg" width="150px" height="200px">
+				<h3> Rs 24,500.00 </h3>
+				<a href="My Account.html"><input type="button" name="button" class="btn" value="Add to Card"></a>
+			</div>
+			
+			<div class="col-level1">
+				<img src="Instuments/Wind/Sarrusophone/A-704CL-zoom.png" width="150px" height="200px">
+				<h3> Rs 22,000.00 </h3>
+				<a href="My Account.html"><input type="button" name="button" class="btn" value="Add to Card"></a>
+			</div>
+			
+			<div class="col-level1">
+				<img src="Instuments/Wind/Sarrusophone/220px-Saksofon_altowy_Serie_III_GP_firmy_Selmer.jpg" width="150px" height="200px">
+				<h3> Rs 45,000.00 </h3>
+				<a href="My Account.html"><input type="button" name="button" class="btn" value="Add to Card"></a>
+			</div>
+			
+			<div class="col-level1">
+				<img src="Instuments/Wind/Sarrusophone/cbb2fa64616741c51ceced58b2ff75db--tenor-sax-tattoo-ideas.jpg" width="150px" height="200px">
+				<h3> Rs 30,000.00 </h3>
+				<a href="My Account.html"><input type="button" name="button" class="btn" value="Add to Card"></a>
+			</div>
+			
+			<div class="col-level1">
+				<img src="Instuments/Wind/Sarrusophone/Yamaha_Saxophone_YAS-62.tif.jpg" width="150px" height="200px">
+				<h3> Rs 60,000.00 </h3>
+				<a href="My Account.html"><input type="button" name="button" class="btn" value="Add to Card"></a>
+			</div>
+			
+			<div class="col-level1">
+				<img src="Instuments/Wind/Sarrusophone/file_13_18.jpg" width="150px" height="200px">
+				<h3> Rs 25,000.00 </h3>
+				<a href="My Account.html"><input type="button" name="button" class="btn" value="Add to Card"></a>
+			</div>
+			
+			<div class="col-level1">
+				<img src="Instuments/Wind/Sarrusophone/71SjWT8l+KL._AC_UL320_SR160,320_.jpg" width="150px" height="200px">
+				<h3> Rs 75,000.00 </h3>
+				<a href="My Account.html"><input type="button" name="button" class="btn" value="Add to Card"></a>
+			</div>
+			
+			<div class="col-level1">
+				<img src="Instuments/Wind/Sarrusophone/YAMYAS875EXII-2_530x@2x.jpg" width="150px" height="200px">
+				<h3> Rs 90,000.00 </h3>
+				<a href="My Account.html"><input type="button" name="button" class="btn" value="Add to Card"></a>
+			</div>
+			
+			<div class="col-level1">
+				<img src="Instuments/Wind/Sarrusophone/6e1d9ab0c401eadf67ee8c26e8159c43.jpg" width="150px" height="200px">
+				<h3> Rs 50,000.00 </h3>
+				<a href="My Account.html"><input type="button" name="button" class="btn" value="Add to Card"></a>
+			</div>
+			
+			<div class="col-level1">
+				<img src="Instuments/Wind/Sarrusophone/7970050491db16ab160d68e7d363a297--instruments.jpg" width="150px" height="200px">
+				<h3> Rs 30,000.00 </h3>
+				<a href="My Account.html"><input type="button" name="button" class="btn" value="Add to Card"></a>
+			</div>
+			
+			<div class="col-level1">
+				<img src="Instuments/Wind/Sarrusophone/BUFFET_CRAMPON_ClarBasse_Ut_diapasonAnglais_Proto_Vichy201106_lot320_vue 1.jpg" width="150px" height="200px">
+				<h3> Rs 35,000.00 </h3>
+				<a href="My Account.html"><input type="button" name="button" class="btn" value="Add to Card"></a>
+			</div>
+			
+			
+			<div class="col-9">
+				<a href="Wind Instruments.html"><input type="button" name="button" value="PREVIOUS" class="btn1"></a>
+				<a href="Wind Instruments Page2.html"><input type="button" name="button" value="NEXT" class="btn1"></a>
+			</div>
+		  
+		</div>
+	
+	<div class="contact col-12">
+		<address>No-212/5, Main Street, Badulla.</address>
+		<a href="#1">zound.store@gmail.com</a> </br>
+		<a href="#1">+944658352464</a> | <a href="#1">+946789765432</a>
+		<a href="#1"><img src="cart.png" align="right" width="5%" height="10%"></a>
+		<a href="#1"><img src="Yootheme-Social-Bookmark-Social-facebook-box-blue.ico" align="right" width="5%" height="10%"></a>
+		<a href="#1"><img src="twitter.png" align="right" width="5%" height="10%"></a>
+	</div>
+	
+	<div class="copyright col-12">
+		<p>Zound&copy2k17 </p>
+	</div>
+</body>
+</html>

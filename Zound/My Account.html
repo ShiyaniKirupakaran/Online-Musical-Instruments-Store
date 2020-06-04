@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title> Zound </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Bootstrap latest compiled and minified CSS, offline -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <!--JQuery, offline -->
+  <script src="jquery-3.2.1.min.js"></script>
+  
+  <!--Bootstrap latest Compiled and minified CSS, offline -->
+  <script src="js/bootstrap.min.js"></script>
+	<style>
+
+		* {
+			box-sizing: border-box;
+		}
+		.header::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		
+		.instrument type::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		
+		[class*="col-"] {
+			float: left;
+			padding: 15px;
+		}
+		.col-1 {width: 8.33%;}
+		.col-2 {width: 16.66%;}
+		.col-3 {width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%;}
+		.col-9 {width: 75%;}
+		.col-10 {width: 83.33%;}
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+	
+		.title{
+			background-image:url("BrillMusic_InsideBanner5.png");
+			opacity:0.8;
+			filter:alpha(opacity=80);
+			height:200px;
+			border-radius: 25px 25px 0px 0px;
+			font-family:Brush Script MT;
+			font-size:60px;
+			color: #e67e22 ;
+			padding:1px;
+			line-height:0.5px;
+		}
+		
+		.header{
+			background-color:  #d5dbdb;
+			font-family:Algerian;
+			font-size:25px;
+			text-align:center;
+			color:black;
+		}
+		
+		.a1:link {
+			text-decoration: none;
+		}
+
+		.a1:visited {
+			text-decoration: none;
+		}
+		
+		.a1:visited {
+			color: black;
+		}
+		
+		.contact{
+			background-color:   #7f8c8d  ;
+			padding:0.1%;
+			border-radius: 15px;
+			margin-bottom:10px;
+			font-size:20px;
+			line-height:45px;
+		}
+		
+		.copyright{
+			background-color:#424949 ;
+			padding:1%;
+			border-radius: 5px;
+			text-align:right;
+			font-size:25px;
+			color:blue;
+		}
+		button{
+				background-color:black;
+				color:white;
+				font-family:verdana;
+				}
+		.para{
+				margin-left:500px;
+				
+				}
+		h3{
+			margin-left:300px;
+			font-family:verdana;
+			}
+		* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.none {
+  -webkit-animation-name: none;
+  -webkit-animation-duration: 1.5s;
+  animation-name: none;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes none {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes none {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+	</style>
+
+</head>
+<body>
+
+	<div class="title col-12">
+		<h1>Zound</h1>
+		<h2 style="font-family:Agency FB;font-size:30px;">Online Store for Musical Instruments</h2>
+	</div>
+	
+	<div class="header col-12">
+	
+		<div  class="Home col-3">
+			<a href="Zound.html" class="a1">Home</a>
+		</div>
+		
+		<div class="My Account col-3">
+			<a href="My Account.html" class="a1">My Account</a>
+		</div>
+		
+		<div class="Customer col-3">
+			<a href="Customer Services.html" class="a1">Customer Services</a>
+		</div>
+		
+		<div class="Contact col-3">
+			<a href="Contact Us.html" class="a1">Contact Us</a>
+		</div>
+		
+	</div>
+	<div class="container">
+	
+	<div class="register" >
+	<h2>REGISTER ACCOUNT</h2>
+	<pre><p>if you already have an account with us please login at the  <a href="Login Page.html"><button type="button"  onclick="show_alert();" class="btn btn-info btn-lg">Login Page</button> </a></p></pre>
+	<h3>Your Personal Details</h3>
+	<div class="form-group">
+	<center><form>
+	<pre>                <label><span style="color:red">*</span>First Name</label>  <input name="fname" placeholder="First Name" size="75">
+		 <label><span style="color:red">*</span>Last Name</label>  <input name="lname" placeholder="Last Name" size="75">
+		 <label><span style="color:red">*</span>E-Mail</label>     <input name="mail" placeholder="E-Mail" size="75">
+		 <label><span style="color:red">*</span>Telephone</label>  <input name="telephone" placeholder="Telephone" size="75">
+		 <label><span style="color:red">*</span>Fax</label>        <input name="Fax" placeholder="Fax" size="75">
+		 </pre></center>
+	<h3>Your Address</h3>
+	<center><pre>                   <label><span style="color:red">*</span>Company</label>  <input name="Company" placeholder="Company" size="75">
+		 <label><span style="color:red">*</span>Address 1</label>  <input name="Address 1" placeholder="Address 1" size="75">
+		 <label><span style="color:red">*</span>Address 2</label>  <input name="Address 2" placeholder="Address 2" size="75">
+		 <label><span style="color:red">*</span>City</label>       <input name="City" placeholder="City" size="75">
+		 <label><span style="color:red">*</span>Post Code</label>  <input name="code" placeholder="Post Code" size="75">
+		 <label><span style="color:red">*</span>Country</label>    <select style="width:470px";><option value="Sri Lanka" size="75">Sri Lanka</option></select>
+
+	      <label><span style="color:red">*</span>Region/State</label>  <select style="width:470px";><option value="---Please Select---" size="75">---Please Select---</option></select>
+		 </pre></center>
+	<h3>Your Password</h3>
+		<center><pre>
+		<label><span style="color:red">*</span>Password</label>    <input name="password" placeholder="Password" size="75">
+	<label><span style="color:red">*</span>Password Confirm</label>    <input name="password confirm" placeholder="Password Confirm" size="75">
+		</pre></center>
+	<h3>Newsletter</h3>
+	<pre><center>
+	<label>Subscribe</label> <input type="radio" value="Yes"> <label>Yes</label> <input type="radio" value="No" checked> <label>No</label>
+	</pre></center>
+	</div>
+	</div>
+	
+	<div class="para">
+	<pre><p style="font-family:verdana";>I have read and agree to the <span style="color:red">Privacy Policy</span> <input type="checkbox" checked="checked" id="check2" onchange="cTrig('check2')"> <button id="demo" type="button" onmouseover="mOver()" onmouseout="mOut()" class="btn btn-info btn-lg">CONTINUE</button></p></pre>
+	</div>
+	
+	
+<div class="slideshow-container">
+
+<div class="mySlides none">
+  <div class="numbertext">1 / 3</div>
+  <img src="martin.jpg" style="width:300px";"height:300px"; "margin-left:900px";>
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides none">
+  <div class="numbertext">2 / 3</div>
+  <img src="41etmv-OtZL._SL500_AC_SS350_.jpg" style="width:300px";"height:300px"; "margin-left:900px";>
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides none">
+  <div class="numbertext">3 / 3</div>
+  <img src="YAM-YFG811II.jpg" style="width:300px";"height:300px";"margin-left:900px";>
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+ function show_alert(){
+	alert("If you don't have an account please create your account here!");
+	}
+	function cTrig(clickedid){
+		if (document.getElementById(clickedid).checked == true) {
+			return false;
+			
+			} else {
+			var box= confirm("Are you sure you want to do this?");
+			if (box==true)
+			return true;
+			else
+				document.getElementById(clickedid).checked = true;
+			}
+			}
+	function mOver(){
+				document.getElementById('demo').innerHTML = "Start";
+				}
+	function mOut(){
+				document.getElementById('demo').innerHTML = "Continue";
+				}
+	</script>
+	</div>
+	</form>
+	
+		 
+		 
+		 
+		 
+	
+	
+	<div class="contact col-12">
+		<address>No-212/5, Main Street, Badulla.</address>
+		<a href="#1">zound.store@gmail.com</a> </br>
+		<a href="#1">+944658352464</a> | <a href="#1">+946789765432</a>
+		<a href="#1"><img src="cart.png" align="right" width="5%" height="10%"></a>
+		<a href="#1"><img src="Yootheme-Social-Bookmark-Social-facebook-box-blue.ico" align="right" width="5%" height="10%"></a>
+		<a href="#1"><img src="twitter.png" align="right" width="5%" height="10%"></a>
+	</div>
+	
+	<div class="copyright col-12">
+		<p>Zound&copy2k17 </p>
+	</div>
+</body>
+</html>
